@@ -33,14 +33,17 @@
 
 
         <div class="swiper-wrapper">
+
           <div class="swiper-slide banner__slide">
             <div class="banner__image" style="background-image: url('assets/images/ex_banner_01.webp');"
               aria-hidden="true"></div>
           </div>
+
           <div class="swiper-slide banner__slide">
             <div class="banner__image" style="background-image: url('assets/images/ex_banner_02.webp');"
               aria-hidden="true"></div>
           </div>
+
         </div>
 
 

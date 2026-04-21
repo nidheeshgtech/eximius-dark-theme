@@ -34,9 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const videoToggle = document.querySelector('.video-showcase__play');
   const videoToggleLabel = document.querySelector('.video-showcase__play-label');
   const videoIframe = document.querySelector('.video-showcase__iframe');
-  const bannerImages = document.querySelectorAll('.banner__image');
   const aboutPageHeroImage = document.querySelector('.about-hero__image');
-  const leadershipImages = document.querySelectorAll('.leadership-card__media img');
   const accordionRoots = document.querySelectorAll('[data-accordion]');
   const partnerStack = document.querySelector('[data-partner-stack]');
   const partnerCards = document.querySelectorAll('.partner-card');
@@ -53,20 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (hasGsapScroll && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const { gsap, ScrollTrigger } = window;
-
-    bannerImages.forEach((image) => {
-      gsap.to(image, {
-        yPercent: 8,
-        scale: 1.12,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: '.banner',
-          start: 'top top',
-          end: 'bottom top',
-          scrub: 1.1,
-        },
-      });
-    });
 
     if (aboutPageHeroImage) {
       gsap.to(aboutPageHeroImage, {
