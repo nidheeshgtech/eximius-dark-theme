@@ -38,12 +38,12 @@
         </div>
 
         <div class="banner__slide">
-          <div class="banner__image" style="background-image: url('assets/images/exi_purpose_.webp');"
+          <div class="banner__image" style="background-image: url('assets/images/ex_banner_02.webp');"
             aria-hidden="true"></div>
         </div>
 
         <div class="banner__slide">
-          <div class="banner__image" style="background-image: url('assets/images/ex_banner_02.webp');"
+          <div class="banner__image" style="background-image: url('assets/images/ex_banner_03.webp');"
             aria-hidden="true"></div>
         </div>
 

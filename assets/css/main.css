@@ -12286,9 +12286,6 @@ p {
 .where-section--about .where-section__bg {
   background-position: center;
 }
-.where-section--about .where-section__overlay {
-  background: linear-gradient(180deg, rgba(21, 31, 38, 0.18) 0%, rgba(21, 31, 38, 0.9) 100%);
-}
 .where-section--about .where-section__content {
   min-height: 51.125rem;
   padding-top: 33.75rem;
@@ -13244,9 +13241,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.where-section__overlay {
-  background: linear-gradient(180deg, rgba(21, 31, 38, 0.1) 0%, #151f26 82.867%), linear-gradient(180deg, rgba(18, 18, 18, 0.16) 0%, rgba(18, 18, 18, 0.16) 100%);
 }
 .where-section__content {
   position: relative;

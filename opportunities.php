@@ -166,6 +166,34 @@
         </div>
       </div>
     </section>
+
+    <section class="contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-section__panel revealme">
+          <div class="contact-section__grid">
+            <div class="contact-section__intro">
+              <p class="contact-section__eyebrow reveal-words">( Contact Us )</p>
+
+              <div class="contact-section__copy">
+                <h3 class="contact-section__title reveal-title" id="contact-title">Have a question or want to get in
+                  touch?</h3>
+                <p class="reveal-words">Fill out the form below and our team will get back to you shortly.</p>
+              </div>
+            </div>
+
+            <a class="ui-arrow-cta contact-section__cta" href="/contact">
+              <span class="ui-arrow-cta__icon contact-section__cta-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 12H17" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" />
+                  <path d="M12 7L17 12L12 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" />
+                </svg>
+              </span>
+              <span class="ui-arrow-cta__label">Contact Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <?php include __DIR__ . '/inc/footer.php'; ?>
