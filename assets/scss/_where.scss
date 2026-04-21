@@ -17,11 +17,11 @@
     background-size: cover;
   }
 
-  // &__overlay {
-  //   background:
-  //     linear-gradient(180deg, rgba(21, 31, 38, 0.1) 0%, #151f26 82.867%),
-  //     linear-gradient(180deg, rgba(18, 18, 18, 0.16) 0%, rgba(18, 18, 18, 0.16) 100%);
-  // }
+  &__overlay {
+    background:
+      linear-gradient(180deg, rgba(21, 31, 38, 0.1) 0%, #151f26 82.867%),
+      linear-gradient(180deg, rgba(18, 18, 18, 0.16) 0%, rgba(18, 18, 18, 0.16) 100%);
+  }
 
   &__content {
     position: relative;
