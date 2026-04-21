@@ -31,15 +31,15 @@
     background-size: cover;
   }
 
-  &__overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background:
-      linear-gradient(180deg, rgba(21, 31, 38, 0.18) 0%, rgba(21, 31, 38, 0.65) 70%),
-      linear-gradient(90deg, rgba(21, 31, 38, 0.10) 0%, rgba(21, 31, 38, 0) 48%);
-    pointer-events: none;
-  }
+  // &__overlay {
+  //   position: absolute;
+  //   inset: 0;
+  //   z-index: 1;
+  //   background:
+  //     linear-gradient(180deg, rgba(21, 31, 38, 0.18) 0%, rgba(21, 31, 38, 0.65) 70%),
+  //     linear-gradient(90deg, rgba(21, 31, 38, 0.10) 0%, rgba(21, 31, 38, 0) 48%);
+  //   pointer-events: none;
+  // }
 
   &__content {
     position: relative;
@@ -209,4 +209,3 @@
     }
   }
 }
-
