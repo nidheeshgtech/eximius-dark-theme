@@ -246,10 +246,6 @@ document.addEventListener('DOMContentLoaded', () => {
         delay: 5500,
         disableOnInteraction: false,
       },
-      pagination: {
-        el: bannerSlider.querySelector('.banner__pagination'),
-        clickable: true,
-      },
     });
   }
 

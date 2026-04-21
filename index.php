@@ -66,8 +66,6 @@
 
         </div>
 
-        <div class="swiper-pagination banner__pagination"></div>
-
       </div>
 
       <div class="banner__overlay"></div>

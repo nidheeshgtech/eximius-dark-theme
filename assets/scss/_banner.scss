@@ -23,8 +23,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transform: scale(1.02);
-    will-change: transform;
   }
 
   &__overlay {
@@ -160,10 +158,6 @@
     }
   }
 
-  .swiper-slide-active &__image {
-    animation: bannerZoom 6s ease forwards;
-  }
-
   @media (max-width: 1199.98px) {
     &__content {
       padding-top: 12rem;
@@ -218,36 +212,3 @@
   }
 }
 
-.banner__pagination {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-  display: flex;
-  gap: 0.5rem;
-
-  .swiper-pagination-bullet {
-    width: 28px;
-    height: 3px;
-    border-radius: 2px;
-    background: rgba(255, 255, 255, 0.4);
-    opacity: 1;
-    transition: background 0.3s ease, width 0.3s ease;
-  }
-
-  .swiper-pagination-bullet-active {
-    background: #ffffff;
-    width: 44px;
-  }
-}
-
-@keyframes bannerZoom {
-  from {
-    transform: scale(1.02);
-  }
-
-  to {
-    transform: scale(1.08);
-  }
-}

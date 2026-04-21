@@ -11754,8 +11754,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transform: scale(1.02);
-  will-change: transform;
 }
 .banner__overlay {
   position: absolute;
@@ -11868,9 +11866,6 @@ p {
   height: 24px;
   transition: transform 0.28s ease;
 }
-.swiper-slide-active .banner__image {
-  animation: bannerZoom 6s ease forwards;
-}
 @media (max-width: 1199.98px) {
   .banner__content {
     padding-top: 12rem;
@@ -11916,36 +11911,6 @@ p {
   }
 }
 
-.banner__pagination {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-  display: flex;
-  gap: 0.5rem;
-}
-.banner__pagination .swiper-pagination-bullet {
-  width: 28px;
-  height: 3px;
-  border-radius: 2px;
-  background: rgba(255, 255, 255, 0.4);
-  opacity: 1;
-  transition: background 0.3s ease, width 0.3s ease;
-}
-.banner__pagination .swiper-pagination-bullet-active {
-  background: #ffffff;
-  width: 44px;
-}
-
-@keyframes bannerZoom {
-  from {
-    transform: scale(1.02);
-  }
-  to {
-    transform: scale(1.08);
-  }
-}
 .inner-page-banner {
   position: relative;
   min-height: min(50rem, 100svh);
