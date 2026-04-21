@@ -22,13 +22,13 @@
   <?php include __DIR__ . '/inc/header.php'; ?>
   <?php
   $opportunityImages = [
-    'platforms' => 'assets/images/preview_image1.webp',
-    'missiles' => 'assets/images/preview_image2.webp',
-    'space' => 'assets/images/preview_image1.webp',
-    'trading' => 'assets/images/preview_image2.webp',
-    'technology' => 'assets/images/preview_image1.webp',
-    'research' => 'assets/images/preview_image2.webp',
-    'homeland' => 'assets/images/preview_image1.webp',
+    'platforms' => 'assets/images/list01.webp',
+    'missiles' => 'assets/images/list02.webp',
+    'space' => 'assets/images/list03.webp',
+    'trading' => 'assets/images/list04.webp',
+    'technology' => 'assets/images/list05.webp',
+    'research' => 'assets/images/list06.webp',
+    'homeland' => 'assets/images/list07.webp',
   ];
 
   foreach ($opportunityImages as $key => $path) {

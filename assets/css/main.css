@@ -11365,19 +11365,19 @@ a:hover {
 .ui-arrow-cta::before {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
   background: #FF5722;
-  opacity: 1;
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform 0.42s cubic-bezier(0.39, 0.58, 0.57, 1);
+  transition: width 0.42s cubic-bezier(0.22, 1, 0.36, 1);
   z-index: 0;
 }
 .ui-arrow-cta:hover, .ui-arrow-cta:focus-visible {
   color: #ffffff;
 }
 .ui-arrow-cta:hover::before, .ui-arrow-cta:focus-visible::before {
-  transform: scaleX(1);
+  width: 100%;
 }
 .ui-arrow-cta:hover .ui-arrow-cta__icon, .ui-arrow-cta:focus-visible .ui-arrow-cta__icon {
   transform: translateX(2px);
@@ -14161,7 +14161,7 @@ p {
 }
 .opportunities-showcase__media {
   position: relative;
-  min-height: 34.625rem;
+  min-height: 27.625rem;
   overflow: hidden;
   background: transparent;
 }
