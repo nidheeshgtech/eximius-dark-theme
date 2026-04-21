@@ -49,8 +49,24 @@
               aria-hidden="true"></div>
           </div>
 
+          <div class="swiper-slide banner__slide">
+            <div class="banner__image" style="background-image: url('assets/images/ex_banner_01.webp');"
+              aria-hidden="true"></div>
+          </div>
+
+          <div class="swiper-slide banner__slide">
+            <div class="banner__image" style="background-image: url('assets/images/exi_purpose_.webp');"
+              aria-hidden="true"></div>
+          </div>
+
+          <div class="swiper-slide banner__slide">
+            <div class="banner__image" style="background-image: url('assets/images/ex_banner_01.webp');"
+              aria-hidden="true"></div>
+          </div>
+
         </div>
 
+        <div class="swiper-pagination banner__pagination"></div>
 
       </div>
 

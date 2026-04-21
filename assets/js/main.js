@@ -240,21 +240,17 @@ document.addEventListener('DOMContentLoaded', () => {
   if (bannerSlider && typeof Swiper !== 'undefined') {
     new Swiper(bannerSlider, {
       loop: true,
-      slidesPerView: 1,
-      spaceBetween: 30,
-
-      breakpoints: {
-        600: {
-          slidesPerView: 1
-        },
-        1000: {
-          slidesPerView: 1
-        },
-        1200: {
-          slidesPerView: 1
-        }
-      }
-
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      speed: 1000,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: bannerSlider.querySelector('.banner__pagination'),
+        clickable: true,
+      },
     });
   }
 
