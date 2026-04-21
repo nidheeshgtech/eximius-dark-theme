@@ -13,8 +13,8 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
     rel="stylesheet" />
 
-  <link rel="stylesheet" href="node_modules/lenis/dist/lenis.css" />
-  <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/vendor/css/lenis.css" />
+  <link rel="stylesheet" href="assets/vendor/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -507,11 +507,11 @@
 
   <?php include __DIR__ . '/inc/footer.php'; ?>
 
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
-  <script src="node_modules/swiper/swiper-bundle.min.js"></script>
-  <script src="node_modules/lenis/dist/lenis.min.js"></script>
+  <script src="assets/vendor/js/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/js/lenis.min.js"></script>
   <script src="assets/js/main.js" defer></script>
 </body>
 
