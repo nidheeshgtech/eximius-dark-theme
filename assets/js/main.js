@@ -49,6 +49,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const revealTitles = document.querySelectorAll('.reveal-title');
   const revealWords = document.querySelectorAll('.reveal-words');
   const revealTexts = document.querySelectorAll('.reveal-text');
+  const scrollTopButton = document.querySelector('[data-scroll-top]');
+  const showRevealItem = (item) => {
+    item.style.removeProperty('opacity');
+    item.style.removeProperty('transform');
+    item.style.removeProperty('translate');
+    item.style.removeProperty('rotate');
+    item.style.removeProperty('scale');
+    item.classList.add('is-visible');
+  };
 
   if (hasGsapScroll && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const { gsap, ScrollTrigger } = window;
@@ -270,6 +279,33 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     setInterval(() => goTo(current + 1), 5500);
+  }
+
+  if (scrollTopButton) {
+    const toggleScrollTopButton = (scrollY = window.scrollY || 0) => {
+      const showThreshold = window.innerHeight * 0.8;
+      scrollTopButton.classList.toggle('is-visible', scrollY >= showThreshold);
+    };
+
+    toggleScrollTopButton();
+
+    if (typeof lenis !== 'undefined' && typeof lenis.on === 'function') {
+      lenis.on('scroll', ({ scroll }) => {
+        toggleScrollTopButton(scroll);
+      });
+    } else {
+      window.addEventListener('scroll', () => {
+        toggleScrollTopButton();
+      }, { passive: true });
+    }
+
+    scrollTopButton.addEventListener('click', () => {
+      if (typeof lenis !== 'undefined' && typeof lenis.scrollTo === 'function') {
+        lenis.scrollTo(0, { duration: 1.15 });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
   }
 
   if (videoFrame && videoToggle && videoToggleLabel && videoIframe) {
@@ -585,7 +621,7 @@ document.addEventListener('DOMContentLoaded', () => {
         (entries, observer) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              entry.target.classList.add('is-visible');
+              showRevealItem(entry.target);
               observer.unobserve(entry.target);
             }
           });
@@ -603,7 +639,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     } else {
       revealItems.forEach((item) => {
-        item.classList.add('is-visible');
+        showRevealItem(item);
       });
     }
   }
@@ -618,7 +654,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
               groupItems.forEach((item, index) => {
                 item.style.transitionDelay = `${index * 120}ms`;
-                item.classList.add('is-visible');
+                showRevealItem(item);
               });
 
               observer.unobserve(entry.target);
@@ -637,7 +673,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       revealGroups.forEach((group) => {
         group.querySelectorAll('.revealme').forEach((item) => {
-          item.classList.add('is-visible');
+          showRevealItem(item);
         });
       });
     }

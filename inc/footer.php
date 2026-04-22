@@ -13,7 +13,8 @@ $routes = [
   <div class="container p-0">
     <div class="site-footer__inner">
       <div class="site-footer__top">
-        <a class="site-footer__brand" href="<?= htmlspecialchars($routes['home'], ENT_QUOTES, 'UTF-8'); ?>" aria-label="EXIMIUS home">
+        <a class="site-footer__brand" href="<?= htmlspecialchars($routes['home'], ENT_QUOTES, 'UTF-8'); ?>"
+          aria-label="EXIMIUS home">
           <img class="site-footer__logo" src="assets/images/header-logo.svg" alt="EXIMIUS" />
         </a>
 
@@ -101,6 +102,17 @@ $routes = [
       <div class="site-footer__divider" aria-hidden="true"></div>
 
       <div class="site-footer__bottom">
+        <button class="site-footer__to-top" type="button" data-scroll-top aria-label="Scroll to top">
+          <span class="site-footer__to-top-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M5 12L12 5L19 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span>Back to top</span>
+        </button>
         <p>© 2026 EDGE PJSC Group. All rights reserved.</p>
       </div>
     </div>

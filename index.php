@@ -331,7 +331,8 @@
     <div class="container p-0">
       <div class="site-footer__inner">
         <div class="site-footer__top">
-          <a class="site-footer__brand" href="#main-content" aria-label="EXIMIUS home">
+          <a class="site-footer__brand" href="<?= htmlspecialchars($routes['home'], ENT_QUOTES, 'UTF-8'); ?>"
+            aria-label="EXIMIUS home">
             <img class="site-footer__logo" src="assets/images/header-logo.svg" alt="EXIMIUS" />
           </a>
 
@@ -368,13 +369,11 @@
             </div>
 
             <nav class="site-footer__nav revealme" aria-label="Footer menu">
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Opportunities</a>
-              <a href="#">Solutions</a>
-              <a href="#">Media</a>
-              <a href="#">Admissions</a>
-              <a href="#">Contact Us</a>
+              <a href="<?= htmlspecialchars($routes['home'], ENT_QUOTES, 'UTF-8'); ?>">Home</a>
+              <a href="<?= htmlspecialchars($routes['about'], ENT_QUOTES, 'UTF-8'); ?>">About</a>
+              <a href="<?= htmlspecialchars($routes['opportunities'], ENT_QUOTES, 'UTF-8'); ?>">Opportunities</a>
+              <a href="<?= htmlspecialchars($routes['admissions'], ENT_QUOTES, 'UTF-8'); ?>">Admissions</a>
+              <a href="<?= htmlspecialchars($routes['contact'], ENT_QUOTES, 'UTF-8'); ?>">Contact Us</a>
             </nav>
           </div>
 
@@ -421,6 +420,17 @@
         <div class="site-footer__divider" aria-hidden="true"></div>
 
         <div class="site-footer__bottom">
+          <button class="site-footer__to-top" type="button" data-scroll-top aria-label="Scroll to top">
+            <span class="site-footer__to-top-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M5 12L12 5L19 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span>Back to top</span>
+          </button>
           <p>© 2026 EDGE PJSC Group. All rights reserved.</p>
         </div>
       </div>

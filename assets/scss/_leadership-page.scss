@@ -215,6 +215,11 @@
     margin-bottom: 1.5rem;
     gap: 1rem;
 
+    &__media {
+      height: 24rem;
+      min-height: 24rem;
+    }
+
     &__content {
       gap: 0px;
     }
