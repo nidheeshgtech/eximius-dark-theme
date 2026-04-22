@@ -127,14 +127,14 @@
     &:focus-visible {
       color: #ffffff;
       gap: 1.15rem;
-      transform: translateY(-1px);
+      // transform: translateY(-1px);
 
       .banner__cta-icon {
         box-shadow: 0 14px 28px rgba(255, 87, 34, 0.24);
       }
 
       .banner__cta-icon svg {
-        transform: translateX(2px);
+        // transform: translateX(2px);
       }
     }
   }

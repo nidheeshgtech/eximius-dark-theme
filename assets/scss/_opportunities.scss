@@ -198,5 +198,15 @@
       width: 2.625rem;
       height: 2.625rem;
     }
+
+    &__grid {
+      .revealme,
+      .revealme.is-visible {
+        opacity: 1;
+        transform: none;
+        filter: none;
+        transition: none;
+      }
+    }
   }
 }

@@ -12,17 +12,17 @@
     color: $primary;
 
     .ui-arrow-cta__icon {
-      transform: translateX(5px);
-      box-shadow: 0 0 0 5px rgba($primary, 0.18);
+      // transform: translateX(5px);
+      // box-shadow: 0 0 0 5px rgba($primary, 0.18);
     }
 
     .ui-arrow-cta__icon svg {
-      transform: translateX(1px);
+      // transform: translateX(1px);
     }
 
     .ui-arrow-cta__label {
       color: $primary;
-      transform: translateX(2px);
+      // transform: translateX(2px);
 
       &::after {
         width: 100%;

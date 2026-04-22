@@ -49,6 +49,16 @@
     line-height: 1.05;
   }
 
+  .ui-arrow-cta {
+    .ui-arrow-cta__label {
+      display: block;
+
+      &::after {
+        background-color: white;
+      }
+    }
+  }
+
   &__cta {
     color: #ffffff;
     font-size: 1.25rem;
@@ -57,22 +67,21 @@
     white-space: nowrap;
     transition: color 0.32s ease;
 
+
+
     &:hover,
     &:focus-visible {
       color: rgba(255, 255, 255, 0.9);
 
-      .contact-section__cta-icon {
-        transform: translateX(5px);
-        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
-      }
+      .contact-section__cta-icon {}
 
       .contact-section__cta-icon svg {
-        transform: translateX(1px);
+        // transform: translateX(1px);
       }
 
       .contact-section__cta-label {
         color: rgba(255, 255, 255, 0.9);
-        transform: translateX(2px);
+        // transform: translateX(2px);
 
         &::after {
           width: 100%;

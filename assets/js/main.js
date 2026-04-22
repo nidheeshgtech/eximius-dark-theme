@@ -135,21 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    if (opportunitiesCards.length) {
-      gsap.from(opportunitiesCards, {
-        y: 28,
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out',
-        stagger: 0.08,
-        scrollTrigger: {
-          trigger: '.opportunities-section__grid',
-          start: 'top 78%',
-          once: true,
-        },
-      });
-    }
-
     ScrollTrigger.refresh();
   }
 
@@ -213,9 +198,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (siteHeader && navToggle) {
     const navLinks = siteHeader.querySelectorAll('.site-header__link, .site-header__cta');
+    const scrollThreshold = 36;
+    const hideThreshold = 140;
+    let lastScrollY = window.scrollY || 0;
+    const syncHeaderScrollState = (scrollY = window.scrollY || 0) => {
+      siteHeader.classList.toggle('is-scrolled', scrollY > scrollThreshold);
+
+      if (siteHeader.classList.contains('is-open')) {
+        siteHeader.classList.remove('is-hidden');
+        lastScrollY = scrollY;
+        return;
+      }
+
+      if (scrollY <= hideThreshold) {
+        siteHeader.classList.remove('is-hidden');
+      } else if (scrollY > lastScrollY + 6) {
+        siteHeader.classList.add('is-hidden');
+      } else if (scrollY < lastScrollY - 6) {
+        siteHeader.classList.remove('is-hidden');
+      }
+
+      lastScrollY = scrollY;
+    };
+
+    syncHeaderScrollState();
 
     navToggle.addEventListener('click', () => {
       const isOpen = siteHeader.classList.toggle('is-open');
+      siteHeader.classList.remove('is-hidden');
       navToggle.setAttribute('aria-expanded', String(isOpen));
       navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
     });
@@ -223,6 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.forEach((link) => {
       link.addEventListener('click', () => {
         siteHeader.classList.remove('is-open');
+        siteHeader.classList.remove('is-hidden');
         navToggle.setAttribute('aria-expanded', 'false');
         navToggle.setAttribute('aria-label', 'Open navigation menu');
       });
@@ -231,10 +242,21 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', () => {
       if (window.innerWidth > 1199.98) {
         siteHeader.classList.remove('is-open');
+        siteHeader.classList.remove('is-hidden');
         navToggle.setAttribute('aria-expanded', 'false');
         navToggle.setAttribute('aria-label', 'Open navigation menu');
       }
     });
+
+    if (typeof lenis !== 'undefined' && typeof lenis.on === 'function') {
+      lenis.on('scroll', ({ scroll }) => {
+        syncHeaderScrollState(scroll);
+      });
+    } else {
+      window.addEventListener('scroll', () => {
+        syncHeaderScrollState();
+      }, { passive: true });
+    }
   }
 
   if (bannerSlider) {
