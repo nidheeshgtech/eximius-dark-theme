@@ -11938,7 +11938,6 @@ p {
 }
 .banner__cta:hover, .banner__cta:focus-visible {
   color: #ffffff;
-  gap: 1.15rem;
 }
 .banner__cta:hover .banner__cta-icon, .banner__cta:focus-visible .banner__cta-icon {
   box-shadow: 0 14px 28px rgba(255, 87, 34, 0.24);

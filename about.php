@@ -346,7 +346,7 @@
           </div>
 
           <div class="learning-partners__stack" data-partner-stack>
-            <article class="partner-card">
+            <article class="partner-card is-open">
               <button class="partner-card__toggle" type="button" aria-expanded="false">
                 <div class="partner-card__brand">
                   <img src="assets/images/logo-bridge.svg" alt="BRIDGE" />
@@ -359,7 +359,7 @@
                       <path d="M12 7L17 12L12 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" />
                     </svg>
                   </span>
-                  <span class="ui-arrow-cta__label partner-card__cta-label">Learn more</span>
+                  <!-- <span class="ui-arrow-cta__label partner-card__cta-label">Learn more</span> -->
                 </span>
               </button>
 
@@ -389,7 +389,7 @@
                       <path d="M12 7L17 12L12 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" />
                     </svg>
                   </span>
-                  <span class="ui-arrow-cta__label partner-card__cta-label">Learn more</span>
+                  <!-- <span class="ui-arrow-cta__label partner-card__cta-label">Learn more</span> -->
                 </span>
               </button>
 
@@ -405,7 +405,7 @@
               </div>
             </article>
 
-            <article class="partner-card is-open">
+            <article class="partner-card ">
               <button class="partner-card__toggle" type="button" aria-expanded="true">
                 <div class="partner-card__brand partner-card__brand--bon">
                   <img src="assets/images/logo-bon.svg" alt="Bon Education" />
@@ -418,7 +418,7 @@
                       <path d="M12 7L17 12L12 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" />
                     </svg>
                   </span>
-                  <span class="ui-arrow-cta__label partner-card__cta-label">Learn more</span>
+                  <!-- <span class="ui-arrow-cta__label partner-card__cta-label">Learn more</span> -->
                 </span>
               </button>
 
