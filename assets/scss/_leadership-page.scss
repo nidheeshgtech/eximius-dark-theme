@@ -219,12 +219,22 @@
       gap: 1.5rem;
     }
 
+    &__meta {
+      order: 1;
+      gap: 0.5rem;
+    }
+
     &__copy {
+      order: 2;
       gap: 1.25rem;
 
       p {
         line-height: 1.5;
       }
+    }
+
+    &__role {
+      font-weight: 500;
     }
 
     &__cta {

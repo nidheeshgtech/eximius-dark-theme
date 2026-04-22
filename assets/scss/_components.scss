@@ -3,86 +3,67 @@
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  overflow: hidden;
   padding-right: 1rem;
   text-decoration: none;
   transition: color 0.32s ease;
-  will-change: transform;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: $primary;
-    transition:
-      width 0.42s cubic-bezier(0.22, 1, 0.36, 1);
-    z-index: 0;
-  }
 
   &:hover,
   &:focus-visible {
-    color: #ffffff;
-
-    &::before {
-      width: 100%;
-    }
+    color: $primary;
 
     .ui-arrow-cta__icon {
-      transform: translateX(2px);
-      background: transparent;
-      box-shadow: none;
+      transform: translateX(5px);
+      box-shadow: 0 0 0 5px rgba($primary, 0.18);
     }
 
     .ui-arrow-cta__icon svg {
-      transform: translateX(2px);
+      transform: translateX(1px);
     }
 
     .ui-arrow-cta__label {
-      color: #ffffff;
-      opacity: 1;
+      color: $primary;
       transform: translateX(2px);
-    }
 
-    .ui-arrow-cta__icon,
-    .ui-arrow-cta__icon svg {
-      color: #ffffff;
+      &::after {
+        width: 100%;
+      }
     }
   }
 
   &__icon {
-    position: relative;
-    z-index: 1;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background: $primary;
     color: #ffffff;
-    will-change: transform;
     transition:
       transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-      background-color 0.32s ease,
-      box-shadow 0.32s ease;
+      box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 
     svg {
       width: 1.15rem;
       height: 1.15rem;
-      will-change: transform;
       transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
   }
 
   &__label {
     position: relative;
-    z-index: 1;
     display: inline-block;
     color: inherit;
-    will-change: transform;
     transition:
       color 0.32s ease,
-      opacity 0.32s ease,
       transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: $primary;
+      transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
   }
 }

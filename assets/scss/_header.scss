@@ -231,7 +231,9 @@
     }
 
     &__cta {
-      justify-content: space-between;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.875rem;
       width: 100%;
       font-size: 1rem;
       margin-left: 0;
