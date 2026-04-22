@@ -12283,6 +12283,7 @@ p {
 @media (max-width: 767.98px) {
   .about-story {
     padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
   }
   .about-story__block {
     gap: 1rem;
