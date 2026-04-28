@@ -257,7 +257,7 @@
       gap: 0.25rem;
       width: 100%;
       margin-top: 1rem;
-      transition: transform 0.52s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.36s ease;
+      transition: transform 0.62s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.42s ease;
       transform: translateY(18px);
       opacity: 0;
     }
@@ -319,6 +319,14 @@
   }
 
   @media (max-width: 991.98px) {
+    min-height: 0;
+    transition:
+      transform 0.45s ease,
+      background-color 0.4s ease,
+      backdrop-filter 0.4s ease,
+      -webkit-backdrop-filter 0.4s ease,
+      box-shadow 0.4s ease,
+      min-height 0.64s cubic-bezier(0.22, 1, 0.36, 1);
 
     &__brand,
     &__logo {
@@ -376,7 +384,7 @@
   transform: translateY(0);
 
   @media (max-width: 991.98px) {
-    height: 100svh;
+    min-height: 100svh;
   }
 
   .site-header__toggle {
