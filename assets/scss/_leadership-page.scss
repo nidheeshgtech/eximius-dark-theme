@@ -1,6 +1,6 @@
 .leadership-section {
   padding: 1.875rem 0 1.875rem;
-  background: #f8f8f6;
+  background: var(--color-surface-page);
 
   &__header {
     display: grid;
@@ -21,7 +21,7 @@
 
   &__title {
     margin: 0;
-    color: #151f26;
+    color: var(--color-text-heading);
     font-weight: 500;
     line-height: 0.96;
   }
@@ -67,12 +67,12 @@
     right: 0;
     bottom: 0;
     height: 1px;
-    background: rgba(68, 75, 82, 0.18);
+    background: var(--color-border-subtle);
   }
 
   &__media {
     overflow: hidden;
-    background: #d9d9d9;
+    background: var(--color-border);
     min-height: 100%;
 
     img {
@@ -101,7 +101,7 @@
     p {
       margin: 0;
       max-width: 37.75rem;
-      color: #444b52;
+      color: var(--color-text-body);
       line-height: 1.5;
     }
   }
@@ -114,7 +114,7 @@
 
     &:hover,
     &:focus-visible {
-      color: #444b52;
+      color: var(--color-text-body);
     }
   }
 
@@ -139,7 +139,7 @@
 
   &__role {
     margin: 0;
-    color: #444b52;
+    color: #a0a0a0;
     line-height: 1.35;
   }
 

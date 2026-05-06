@@ -1,6 +1,6 @@
 .about-story {
   padding: 0 0 2rem;
-  background: #f8f8f6;
+  background: var(--color-surface-page);
 
   &__block {
     display: flex;
@@ -30,13 +30,13 @@
   &__description {
     margin: 0;
     // max-width: 32rem;
-    color: #444b52;
+    color: var(--color-text-body);
     font-size: clamp(1.25rem, 1.6vw, 1.5rem);
   }
 
   &__image-wrap {
     overflow: hidden;
-    background: #d9d9d9;
+    background: var(--color-border);
   }
 
   &__image {

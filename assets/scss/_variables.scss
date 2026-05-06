@@ -18,3 +18,28 @@ $grid-gutter-width: 2rem;
 $theme-colors: (
   "primary": $primary,
 );
+
+// ============================================================
+// CSS Custom Properties — Light theme (default)
+// ============================================================
+:root,
+[data-bs-theme="light"] {
+  --color-surface-page:      #f8f8f6;
+  --color-surface-card:      #f8f8f6;
+  --color-surface-white:     #ffffff;
+  --color-surface-panel:     #ffffff;
+  --color-dark-navy:         #151f26;
+  --color-dark-navy-rgb:     21, 31, 38;
+  --color-text-body:         #444b52;
+  --color-text-heading:      #151f26;
+  --color-text-muted:        rgba(68, 75, 82, 0.8);
+  --color-text-placeholder:  rgba(68, 75, 82, 0.6);
+  --color-border:            #d9d9d9;
+  --color-border-subtle:     rgba(68, 75, 82, 0.18);
+  --color-card-hover-bg:     #ffffff;
+  --color-card-hover-text:   #2f3740;
+  --color-text-inactive:     #bab4b3;
+  --color-partner-card-bg:   #f8f8f6;
+  --color-select-bg:         #f8f8f6;
+  --color-select-text:       #444b52;
+}

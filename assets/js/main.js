@@ -1,5 +1,29 @@
 // main.js
 
+// ── Dark-mode toggle ──────────────────────────────────────
+(function () {
+  var STORAGE_KEY = 'eximius-theme';
+  var htmlEl = document.documentElement;
+  var stored = localStorage.getItem(STORAGE_KEY);
+  if (stored === 'dark' || stored === 'light') {
+    htmlEl.setAttribute('data-bs-theme', stored);
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    function updateLabel(theme) {
+      btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+    }
+    updateLabel(htmlEl.getAttribute('data-bs-theme') || 'light');
+    btn.addEventListener('click', function () {
+      var next = htmlEl.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+      htmlEl.setAttribute('data-bs-theme', next);
+      localStorage.setItem(STORAGE_KEY, next);
+      updateLabel(next);
+    });
+  });
+}());
+
 // ── Lenis smooth scroll ────────────────────────────────────
 const lenis = new Lenis({
   duration: 1.3,

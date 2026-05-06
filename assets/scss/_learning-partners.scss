@@ -1,6 +1,6 @@
 .learning-partners {
   padding: 4rem 0 4.5rem;
-  background: #f8f8f6;
+  background: var(--color-surface-page);
 
   &__layout {
     display: grid;
@@ -36,8 +36,8 @@
 .partner-card {
   position: relative;
   top: 0;
-  border: 1px solid #d9d9d9;
-  background: #f8f8f6;
+  border: 1px solid var(--color-border);
+  background: var(--color-partner-card-bg);
   overflow: hidden;
   box-shadow: 0 8px 22px rgba(68, 75, 82, 0.04);
 
@@ -85,7 +85,7 @@
   }
 
   &__cta {
-    color: #444b52;
+    color: var(--color-text-body);
     white-space: nowrap;
   }
 
@@ -131,7 +131,7 @@
 
     p {
       margin: 0 0 1rem;
-      color: #444b52;
+      color: var(--color-text-body);
     }
 
     p:last-child {

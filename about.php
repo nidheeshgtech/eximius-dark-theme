@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
   <meta charset="UTF-8" />
@@ -39,8 +39,7 @@
         <div class="leadership-section__list">
           <article class="leadership-card revealme-group">
             <div class="leadership-card__media revealme">
-              <img src="https://www.figma.com/api/mcp/asset/ca7967c0-82c9-4fdc-9fd7-fee9c1cc506e"
-                alt="H.E. Faisal Al Bannai" />
+              <img src="assets/images/leader01.webp" alt="H.E. Faisal Al Bannai" />
             </div>
 
             <div class="leadership-card__content">
@@ -69,8 +68,7 @@
 
           <article class="leadership-card revealme-group">
             <div class="leadership-card__media revealme">
-              <img src="https://www.figma.com/api/mcp/asset/e6812525-af69-42f0-bddd-5a5326ae3acf"
-                alt="Sana Al Daoumi" />
+              <img src="assets/images/leader02.webp" alt="Sana Al Daoumi" />
             </div>
 
             <div class="leadership-card__content">
@@ -99,7 +97,7 @@
 
           <article class="leadership-card revealme-group">
             <div class="leadership-card__media revealme">
-              <img src="https://www.figma.com/api/mcp/asset/6a980a86-9d58-460c-8d81-77490f2c91e0" alt="Colm Lynch" />
+              <img src="assets/images/leader03.webp" alt="Colm Lynch" />
             </div>
 
             <div class="leadership-card__content">

@@ -1,0 +1,74 @@
+// ============================================================
+// Dark theme — CSS custom property overrides
+// Applied when <html data-bs-theme="dark">
+// ============================================================
+
+// Theme toggle icon visibility
+[data-bs-theme="light"] .site-header__theme-icon--moon {
+  display: none;
+}
+
+[data-bs-theme="dark"] .site-header__theme-icon--sun {
+  display: none;
+}
+
+[data-bs-theme="dark"] {
+  --color-surface-page: #1d1d1d;
+  --color-surface-card: #252525;
+  --color-surface-white: #161616;
+  --color-surface-panel: #252525;
+  --color-dark-navy: #111111;
+  --color-dark-navy-rgb: 17, 17, 17;
+  --color-text-body: #cccccc;
+  --color-text-heading: #ebebeb;
+  --color-text-muted: rgba(204, 204, 204, 0.78);
+  --color-text-placeholder: rgba(204, 204, 204, 0.5);
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-subtle: rgba(255, 255, 255, 0.07);
+  --color-card-hover-bg: #2e2e2e;
+  --color-card-hover-text: #ebebeb;
+  --color-text-inactive: rgba(204, 204, 204, 0.4);
+  --color-partner-card-bg: #252525;
+  --color-select-bg: #252525;
+  --color-select-text: #cccccc;
+
+  // Overlay gradients — use #1d1d1d base instead of #151f26
+  .banner__overlay {
+    background:
+      linear-gradient(180deg, rgba(29, 29, 29, 0.18) 0%, rgba(29, 29, 29, 0.65) 70%),
+      linear-gradient(90deg, rgba(29, 29, 29, 0.10) 0%, rgba(29, 29, 29, 0) 48%);
+  }
+
+  .specialists-showcase__overlay {
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 0.8) 100%);
+  }
+
+  .admissions-section__overlay {
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%);
+  }
+
+  // Logo grid items
+  .strategic-opportunities__logo-item {
+    background: #ffffff;
+    border-right-color: #cccccc;
+    border-bottom-color: #cccccc;
+
+    &:hover,
+    &:focus-within {
+      background: #f0f0f0;
+
+      img {
+        filter: none;
+      }
+    }
+  }
+
+  .site-footer,
+  .site-footer__inner {
+    background: #141414;
+  }
+
+  .site-header::before {
+    background: linear-gradient(180deg, rgba(13, 23, 31, 0.8) 0%, rgb(0 0 0 / 44%) 100%);
+  }
+}

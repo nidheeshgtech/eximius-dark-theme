@@ -1,6 +1,6 @@
 .about-section {
   padding: 2rem 0 4rem;
-  background: #f8f8f6;
+  background: var(--color-surface-page);
 
   &__grid {
     display: grid;
@@ -28,7 +28,7 @@
 
   &__title {
     margin: 0;
-    color: #151f26;
+    color: var(--color-text-heading);
     max-width: none;
     font-weight: 500;
     white-space: nowrap;
@@ -39,7 +39,7 @@
     margin-left: clamp(8.5rem, 16vw, 24.5rem);
     padding-right: clamp(7rem, 10vw, 20rem);
     padding-top: 0px;
-    color: rgba(21, 31, 38, 0.8);
+    color: var(--color-text-muted);
 
     p {
       margin: 0 0 1.875rem;
@@ -55,7 +55,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
-    color: #151f26;
+    color: var(--color-text-heading);
     font-size: 1.25rem;
     font-weight: 400;
     // include opacity + filter so revealme transition works; gap for hover
@@ -72,7 +72,7 @@
 
     &:hover,
     &:focus-visible {
-      color: #151f26;
+      color: var(--color-text-heading);
       gap: 0.8rem;
       transform: translateY(-1px);
 

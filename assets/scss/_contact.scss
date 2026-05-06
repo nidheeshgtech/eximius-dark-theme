@@ -1,6 +1,6 @@
 .contact-section {
   padding: 1.875rem 0;
-  background: #f8f8f6;
+  background: var(--color-surface-page);
 
   &__panel {
     background: $primary;
@@ -52,6 +52,7 @@
   .ui-arrow-cta {
     .ui-arrow-cta__label {
       display: block;
+      color: #ffffff;
 
       &::after {
         background-color: white;
