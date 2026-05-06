@@ -1,16 +1,16 @@
 {
   "version": 2,
   "functions": {
-    "*.php": {
+    "api/*.php": {
       "runtime": "vercel-php@0.6.2"
     }
   },
   "routes": [
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/about", "dest": "/about.php" },
-    { "src": "/opportunities", "dest": "/opportunities.php" },
-    { "src": "/admissions", "dest": "/admissions.php" },
-    { "src": "/contact", "dest": "/contact.php" },
-    { "src": "/", "dest": "/index.php" }
+    { "src": "/about", "dest": "/api/about.php" },
+    { "src": "/opportunities", "dest": "/api/opportunities.php" },
+    { "src": "/admissions", "dest": "/api/admissions.php" },
+    { "src": "/contact", "dest": "/api/contact.php" },
+    { "src": "/", "dest": "/api/index.php" }
   ]
 }
