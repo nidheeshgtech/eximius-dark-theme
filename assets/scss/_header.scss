@@ -171,6 +171,10 @@
     transition: gap 0.25s ease, transform 0.25s ease;
     min-width: 200px;
 
+    .ui-arrow-cta__label {
+      color: white;
+    }
+
     &:hover,
     &:focus-visible {
       color: #ffffff;

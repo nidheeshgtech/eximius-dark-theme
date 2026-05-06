@@ -11572,6 +11572,9 @@ a:hover {
   transition: gap 0.25s ease, transform 0.25s ease;
   min-width: 200px;
 }
+.site-header__cta .ui-arrow-cta__label {
+  color: white;
+}
 .site-header__cta:hover, .site-header__cta:focus-visible {
   color: #ffffff;
   gap: 1.15rem;
