@@ -2,11 +2,11 @@
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $isLocalHost = str_contains($host, 'localhost') || str_contains($host, '127.0.0.1');
 $routes = [
-  'home' => $isLocalHost ? '/eximius/index.php' : '/',
-  'about' => $isLocalHost ? '/eximius/about.php' : '/about',
-  'opportunities' => $isLocalHost ? '/eximius/opportunities.php' : '/opportunities',
-  'admissions' => $isLocalHost ? '/eximius/admissions.php' : '/admissions',
-  'contact' => $isLocalHost ? '/eximius/contact.php' : '/contact',
+  'home' => $isLocalHost ? '/eximius-dark/index.php' : '/',
+  'about' => $isLocalHost ? '/eximius-dark/about.php' : '/about',
+  'opportunities' => $isLocalHost ? '/eximius-dark/opportunities.php' : '/opportunities',
+  'admissions' => $isLocalHost ? '/eximius-dark/admissions.php' : '/admissions',
+  'contact' => $isLocalHost ? '/eximius-dark/contact.php' : '/contact',
 ];
 ?>
 <footer class="site-footer" id="site-footer">
